@@ -1,0 +1,23 @@
+dataset: nubes # cantemist, pharmaconer, nubes, clinical_trials
+model: flair # flair
+domain: clinical # clinical (ours), general-domain, scielo
+
+ner_hyperparameters:
+    encoder: LSTM 
+    encoder_layers: 1
+    hidden_size: 256
+    dropout: 0.05
+    use_crf: True
+
+ner_training:
+    max_epochs: 150
+    learning_rate: 0.1
+    mini_batch_size: 32
+    optimizer: SGD
+        
+                                   
+
+
+
+
+
